@@ -1,0 +1,2 @@
+ionic start <nombre proyecto> <plantilla> --> crear nuevo proyecto ionic
+ionic serve --devapp --> Inicia la aplicación para probarla con la app
