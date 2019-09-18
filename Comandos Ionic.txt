@@ -1,2 +1,30 @@
-ionic start <nombre proyecto> <plantilla> --> crear nuevo proyecto ionic
-ionic serve --devapp --> Inicia la aplicación para probarla con la app
+PAQUETES NECESARIOS:
+
+NodeJS
+npm
+	ionic
+	Gradle 
+	cordova -g
+	native-run -g
+
+
+
+
+
+Crear nuevo proyecto ionic:
+ionic start <nombre proyecto> <plantilla>
+
+Iniciar la aplicacion:
+ionic serve --devapp
+
+
+
+Compilar la aplicacion para android:
+ionic cordova build android
+
+Compilar y ejecutar:
+ionic cordova run android
+
+
+Ejecutar un apk:
+native-run android --app <ruta del apk> --device
