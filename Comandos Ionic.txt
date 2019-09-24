@@ -28,3 +28,9 @@ ionic cordova run android
 
 Ejecutar un apk:
 native-run android --app <ruta del apk> --device
+
+Ver las cosas que se pueden generar:
+npx ng g --help
+
+Generar algun componente de la lista anterior:
+ionic g <componente> <ruta>
