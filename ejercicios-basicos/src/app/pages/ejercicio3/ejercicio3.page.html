@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar text-center color='dark'>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejercicio 3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color='medium'>
+  <ion-grid>
+    <ion-row>
+      <ion-col size='3'>
+        <ion-button (click)='changeValue(-1)' size='large' shape='round' color='light' expand='full'>
+            <ion-icon name="remove"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col size='3' offset='6'>
+        <ion-button (click)='changeValue(1)' size='large' shape='round' color='light' expand='full'>
+            <ion-icon name="add"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h1 text-center><strong>{{ value }}</strong></h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)='resetValue()' size='large' shape='round' color='light' expand='full'>
+          Reset
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

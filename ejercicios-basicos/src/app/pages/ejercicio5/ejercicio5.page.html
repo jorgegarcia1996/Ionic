@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar text-center color='dark'>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejercicio 5</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content color='medium'>
+  <ion-item>
+    <ion-label position='stacked'>Mínimo</ion-label>
+    <ion-input [(ngModel)]='min' type='number'></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position='stacked'>Máximo</ion-label>
+    <ion-input [(ngModel)]='max' type='number'></ion-input>
+  </ion-item>
+
+  <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button expand='full' shape='round' color='light' (click)='generate()'>
+            Generar
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h1 text-center><strong>{{ value }}</strong></h1>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>
