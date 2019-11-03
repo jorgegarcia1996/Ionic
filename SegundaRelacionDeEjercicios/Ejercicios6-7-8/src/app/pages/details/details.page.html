@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ film.title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <ion-item-divider color="dark">
+      <ion-label button [routerLink]="['/','home']">
+        <h2>Portada: {{ film.cover }}</h2>
+      </ion-label>
+    </ion-item-divider>
+    <ion-item-divider color="dark">
+      <ion-label>
+        <h2>Puntuación: {{ film.score }}</h2>
+      </ion-label>
+    </ion-item-divider>
+    <ion-item-divider color="dark">
+      <ion-label>
+        <h2>Estreno: {{ film.release }}</h2>
+      </ion-label>
+    </ion-item-divider>
+    <ion-item-divider color="dark">
+      <ion-label>
+        <h2>Sinopsis: {{ film.synopsis }}</h2>
+      </ion-label>
+    </ion-item-divider>
+    <ion-button (click)="presentAlertConfirm(film.title)" expand="full">
+      Borrar
+    </ion-button>
+  </ion-list>
+</ion-content>

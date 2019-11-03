@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Lista de películas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list lines="full">
+    <ion-item button [routerLink]="['/','details', f.title]"
+     *ngFor="let f of films">
+      <ion-label>
+        <h2>Título: {{ f.title }}</h2>
+      </ion-label>
+      <ion-label>
+        <h4>Portada: {{ f.cover }}</h4>
+      </ion-label>
+  </ion-item>
+  </ion-list>
+</ion-content>
