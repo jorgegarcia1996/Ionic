@@ -7,15 +7,17 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list lines="full">
-    <ion-item button [routerLink]="['/','details', f.title]"
-     *ngFor="let f of films">
-      <ion-label>
+  <ion-list lines="full" class="center">
+    <ion-item button text-center *ngFor="let f of films">
+      <div (click)="showDetails(f.title)">
         <h2>Título: {{ f.title }}</h2>
-      </ion-label>
-      <ion-label>
-        <h4>Portada: {{ f.cover }}</h4>
-      </ion-label>
-  </ion-item>
+        <img [src]="f.cover" alt="">
+      </div>
+      <div *ngIf="clicked && films[index].title == f.title">
+        <p>{{ f.release }}</p>
+        <p>{{ f.score }}</p>
+        <p>{{ f.synopsis }}</p>
+      </div>
+    </ion-item>
   </ion-list>
 </ion-content>
