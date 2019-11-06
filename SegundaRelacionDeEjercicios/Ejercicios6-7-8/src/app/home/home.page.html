@@ -13,10 +13,10 @@
         <h2>Título: {{ f.title }}</h2>
         <img [src]="f.cover" alt="">
       </div>
-      <div *ngIf="clicked && films[index].title == f.title">
-        <p>{{ f.release }}</p>
-        <p>{{ f.score }}</p>
-        <p>{{ f.synopsis }}</p>
+      <div class="details" *ngIf="clicked && films[index].title == f.title">
+        <p>Fecha de Estreno: {{ f.release }}</p>
+        <p>Puntuación: {{ f.score }}</p>
+        <p>Sinopsis: <br>{{ f.synopsis }}</p>
       </div>
     </ion-item>
   </ion-list>
