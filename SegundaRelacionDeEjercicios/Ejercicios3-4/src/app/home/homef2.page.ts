@@ -16,6 +16,13 @@ export class HomePage {
 
   ngOnInit() {
     this.items = this.service.getItems();
+    /* Forma para subscripcion de datos con observable
+    this.service.getItems().subscribe(
+      data => {
+        this.items = data;
+      }
+    );
+    */
   }
 
   getTotal(): number {

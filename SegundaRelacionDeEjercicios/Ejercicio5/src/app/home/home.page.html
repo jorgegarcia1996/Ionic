@@ -18,6 +18,7 @@
         <ion-icon *ngIf="t.category == 'personal'" name="person"></ion-icon>
         <ion-icon *ngIf="t.category == 'trabajo'" name="briefcase"></ion-icon>
         <ion-icon *ngIf="t.category == 'estudios'" name="book"></ion-icon>
+        <ion-icon name="blank"></ion-icon>
         <ion-label>   {{ t.title }}</ion-label>
         <ion-icon (click)="goEditTask(t.id)" name="create">
         </ion-icon>
